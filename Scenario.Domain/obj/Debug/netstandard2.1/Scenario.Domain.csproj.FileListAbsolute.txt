@@ -1,0 +1,10 @@
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\bin\Debug\netstandard2.1\Scenario.Domain.deps.json
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\bin\Debug\netstandard2.1\Scenario.Domain.dll
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\bin\Debug\netstandard2.1\Scenario.Domain.pdb
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\obj\Debug\netstandard2.1\Scenario.Domain.csproj.AssemblyReference.cache
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\obj\Debug\netstandard2.1\Scenario.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\obj\Debug\netstandard2.1\Scenario.Domain.AssemblyInfoInputs.cache
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\obj\Debug\netstandard2.1\Scenario.Domain.AssemblyInfo.cs
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\obj\Debug\netstandard2.1\Scenario.Domain.csproj.CoreCompileInputs.cache
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\obj\Debug\netstandard2.1\Scenario.Domain.dll
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Domain\obj\Debug\netstandard2.1\Scenario.Domain.pdb

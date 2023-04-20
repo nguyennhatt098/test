@@ -1,0 +1,59 @@
+﻿@using Scenario.Domain.Entities;
+@model Order
+@{
+    var customers = ViewData["Customers"] as List<Customer>;
+    var products = ViewData["Products"] as List<Product>;
+}
+<div>
+
+    @*<form asp-controller="Order" asp-action="CreateOrder" asp-antiforgery="false" method="post">*@
+        <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Order Name:</label>
+            <input type="text" class="form-control" name="OrderName" asp-for="OrderName">
+            <div class="error red-clr">
+                @Html.ValidationMessageFor(x => x.OrderName)
+            </div>
+        </div>
+        <div class="form-group">
+
+            <select class="form-control" asp-for="ProductId">
+                <option selected="selected" value="0">Choice Product</option>
+                @foreach (var item in products)
+                {
+                    <option value="@item.Id">@item.Name</option>
+
+                }
+            </select>
+            <div class="error red-clr">
+                @Html.ValidationMessageFor(x => x.ProductId)
+            </div>
+        </div>
+        <div class="form-group">
+
+            <select class="form-control" asp-for="CustomerId">
+                <option selected="selected" value="0">Choice Customer</option>
+                @foreach (var item in customers)
+                {
+                    <option value="@item.Id">@item.Name</option>
+
+                }
+            </select>
+            <div class="error red-clr">
+                @Html.ValidationMessageFor(x => x.CustomerId)
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Create order:</label>
+            <input type="date" class="form-control" name="OrderDate" asp-for="OrderDate">
+
+        </div>
+
+        <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Amount:</label>
+            <input type="text" class="form-control" name="Amount" asp-for="Amount">
+        </div>
+        <button type="button" onclick="order.save()" class="btn btn-primary">Save</button>
+
+ @*   </form>*@
+
+</div>

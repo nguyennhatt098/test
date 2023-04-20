@@ -1,0 +1,17 @@
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\bin\Debug\net6.0\Scenario.Data.EFCore.deps.json
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\bin\Debug\net6.0\Scenario.Data.EFCore.runtimeconfig.json
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\bin\Debug\net6.0\Scenario.Data.EFCore.dll
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\bin\Debug\net6.0\Scenario.Data.EFCore.pdb
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\bin\Debug\net6.0\Scenario.Domain.dll
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\bin\Debug\net6.0\Scenario.Domain.pdb
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.csproj.AssemblyReference.cache
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.AssemblyInfoInputs.cache
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.AssemblyInfo.cs
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.csproj.CoreCompileInputs.cache
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.csproj.CopyComplete
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.dll
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\refint\Scenario.Data.EFCore.dll
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.pdb
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\Scenario.Data.EFCore.genruntimeconfig.cache
+C:\Users\nhatnm1\source\repos\Scenario.Web\Scenario.Data.EFCore\obj\Debug\net6.0\ref\Scenario.Data.EFCore.dll
