@@ -1,20 +1,30 @@
-using Scenario.Domain.Entities;
+﻿using Scenario.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Scenario.Data.EFCore
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<IdentityUser>
     {
 
         //public DataContext(DbContextOptions options) : base(options) { }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-            //modelBuilder.ApplyConfiguration(new CustomerMap());
-            //modelBuilder.ApplyConfiguration(new OrderMap());
-            //modelBuilder.ApplyConfiguration(new OrderItemMap());
-            //modelBuilder.ApplyConfiguration(new ProductMap());
-            //modelBuilder.ApplyConfiguration(new StockMap());
+
+            base.OnModelCreating(builder);
+            // Bỏ tiền tố AspNet của các bảng: mặc định các bảng trong IdentityDbContext có
+            // tên với tiền tố AspNet như: AspNetUserRoles, AspNetUser ...
+            // Đoạn mã sau chạy khi khởi tạo DbContext, tạo database sẽ loại bỏ tiền tố đó
+            foreach (var entityType in builder.Model.GetEntityTypes())
+            {
+                var tableName = entityType.GetTableName();
+                if (tableName.StartsWith("AspNet"))
+                {
+                    entityType.SetTableName(tableName.Substring(6));
+                }
+            }
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

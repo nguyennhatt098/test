@@ -10,12 +10,9 @@
         <div class="form-group">
             <label for="recipient-name" class="col-form-label">Order Name:</label>
             <input type="text" class="form-control" name="OrderName" asp-for="OrderName">
-            <div class="error red-clr">
-                @Html.ValidationMessageFor(x => x.OrderName)
-            </div>
         </div>
         <div class="form-group">
-
+        <label for="recipient-name" class="col-form-label">Product Name:</label>
             <select class="form-control" asp-for="ProductId">
                 <option selected="selected" value="0">Choice Product</option>
                 @foreach (var item in products)
@@ -24,12 +21,9 @@
 
                 }
             </select>
-            <div class="error red-clr">
-                @Html.ValidationMessageFor(x => x.ProductId)
-            </div>
         </div>
         <div class="form-group">
-
+        <label for="recipient-name" class="col-form-label">Customer Name:</label>
             <select class="form-control" asp-for="CustomerId">
                 <option selected="selected" value="0">Choice Customer</option>
                 @foreach (var item in customers)
@@ -38,9 +32,6 @@
 
                 }
             </select>
-            <div class="error red-clr">
-                @Html.ValidationMessageFor(x => x.CustomerId)
-            </div>
         </div>
         <div class="form-group">
             <label for="recipient-name" class="col-form-label">Create order:</label>

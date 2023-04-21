@@ -47,6 +47,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -175,9 +183,6 @@
             "projectReferences": {
               "C:\\Users\\nhatnm1\\source\\repos\\Scenario.Web\\Scenario.Data.EFCore\\Scenario.Data.EFCore.csproj": {
                 "projectPath": "C:\\Users\\nhatnm1\\source\\repos\\Scenario.Web\\Scenario.Data.EFCore\\Scenario.Data.EFCore.csproj"
-              },
-              "C:\\Users\\nhatnm1\\source\\repos\\Scenario.Web\\Scenario.Domain\\Scenario.Domain.csproj": {
-                "projectPath": "C:\\Users\\nhatnm1\\source\\repos\\Scenario.Web\\Scenario.Domain\\Scenario.Domain.csproj"
               }
             }
           }
@@ -192,16 +197,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.13, )"
-            },
             "NLog": {
               "target": "Package",
               "version": "[5.1.3, )"

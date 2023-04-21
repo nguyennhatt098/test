@@ -1,13 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Scenario.Domain.Entities;
 using Scenario.Domain.Interfaces;
 using Scenario.Domain.Interfaces.Repository;
 using Scenario.Domain.Model;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Scenario.Web.Controllers
 {
@@ -31,11 +28,12 @@ namespace Scenario.Web.Controllers
             _uow = uow;
             _categoryRepository = categoryRepository;
         }
-
+        [Authorize(Roles = "ViewOrder")]
         public async Task<IActionResult> Index()
         {
             return View();
         }
+        [Authorize(Roles = "ViewOrder")]
         public async Task<IActionResult> GetOrder()
         {
             var draw = Request.Form["draw"].FirstOrDefault();
@@ -75,12 +73,14 @@ namespace Scenario.Web.Controllers
             var jsonData = new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = data };
             return Ok(jsonData);
         }
+        [Authorize(Roles = "CreateOrder")]
         public async Task<IActionResult> Create()
         {
             ViewData["Customers"] = await _customerRepository.Get().ToListAsync();
             ViewData["Products"] = await _productRepository.Get().ToListAsync();
             return PartialView("_Create");
         }
+        [Authorize(Roles = "CreateOrder")]
         [HttpPost]
         public IActionResult CreateOrder(OrderRequest orderModelRequest)
         {
