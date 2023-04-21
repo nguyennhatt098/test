@@ -11,7 +11,7 @@ builder.Services.AddControllersWithViews();
 
 Ioc.AddIoc(builder.Services);
 var app = builder.Build();
-LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
+//LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
 //app.UseMiddleware<ExceptionMiddleware>();
 

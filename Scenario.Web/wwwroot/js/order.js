@@ -16,14 +16,14 @@ var order = {
             }],
             "columns": [
                 { "data": "id", "name": "Id", "autoWidth": true },
-                { "data": "orderName", "name": "First Name", "autoWidth": true },
-                { "data": "lastName", "name": "Last Name", "autoWidth": true },
-                { "data": "contact", "name": "Country", "autoWidth": true },
-                { "data": "email", "name": "Email", "autoWidth": true },
-                { "data": "dateOfBirth", "name": "Date Of Birth", "autoWidth": true },
-                {
-                    "render": function (data, row) { return "<a href='#' class='btn btn-danger' onclick=DeleteCustomer('" + row.id + "'); >Delete</a>"; }
-                },
+                { "data": "productName", "name": "ProductName", "autoWidth": true },
+                { "data": "categoryName", "name": "CategoryName", "autoWidth": true },
+                { "data": "customerName", "name": "CustomerName", "autoWidth": true },
+                { "data": "orderDate", "name": "OrderDate", "autoWidth": true },
+                { "data": "amount", "name": "amount", "autoWidth": true },
+                //{
+                //    "render": function (data, row) { return ""; }
+                //},
             ]
         });
     },
